@@ -1,5 +1,6 @@
 # store-rating-platform
 A full-stack web application built with React.js, Node.js, Express, and MySQL that allows users to explore stores, give ratings (1–5 stars), and write reviews. The app implements role-based authentication to provide different access levels for Users, Store Owners, and Admins.
+<br>
  ✨ Features
 <br>
 Role-Based Authentication (JWT)
