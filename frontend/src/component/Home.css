@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e0f2fe);
+  min-height: 100vh;
+}
+
+/* Container */
+.sr-home {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Title */
+.sr-home-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Store List */
+.sr-store-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Store Card - Glassmorphism */
+.sr-store-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.sr-store-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* Store Info */
+.sr-store-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+.sr-store-address {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+.sr-store-rating {
+  margin-bottom: 1rem;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* Rating Section */
+.sr-rating-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.sr-star {
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+.sr-star:hover {
+  transform: scale(1.2);
+  color: #fbbf24;
+}
+.sr-star-active {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+/* Review Section */
+.sr-review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.sr-review-section textarea {
+  resize: none;
+  min-height: 80px;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s;
+}
+.sr-review-section textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+}
+
+/* Submit Button */
+.sr-submit-btn {
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.sr-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+/* Review Bubble */
+.sr-review-display {
+  margin-top: 1rem;
+  background: #f1f5f9;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #0f172a;
+  position: relative;
+}
+.sr-review-display::before {
+  content: "💬";
+  margin-right: 0.5rem;
+}
+
+/* Review Action Buttons */
+.sr-review-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.sr-edit-btn,
+.sr-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.sr-edit-btn {
+  color: #2563eb;
+}
+.sr-edit-btn:hover {
+  background: #dbeafe;
+}
+.sr-delete-btn {
+  color: #dc2626;
+}
+.sr-delete-btn:hover {
+  background: #fee2e2;
+}
